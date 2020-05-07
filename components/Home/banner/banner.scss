@@ -1,0 +1,113 @@
+$title-color: #37383F;
+
+#banner {
+  height: 100vh;
+  background: url("/assets/background.png") no-repeat center;
+  background-size: cover;
+
+  .banner-container {
+    height: 100%;
+    color: $title-color;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .name {
+      font-size: 100px;
+      font-weight: 900;
+
+      @media screen and (max-width: 700px) {
+        font-size: 70px;
+      }
+
+      @media screen and (max-width: 500px) {
+        font-size: 40px;
+      }
+
+      #rainbow {
+        border-radius: 5px;
+        font-weight: bold;
+        padding: 3px 5px;
+        background-color: #FFEED9;
+        color: #FF9900;
+        animation: rainbowAnimation 60s infinite;
+      }
+    }
+
+    .role {
+      font-size: 30px;
+      margin-top: 20px;
+
+      @media screen and (max-width: 700px) {
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: 500px) {
+        font-size: 17px;
+      }
+
+      #spacer {
+        text-transform: lowercase;
+      }
+    }
+
+    .scroller {
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+
+      .scroller-animation {
+        height: 80px;
+        width: 1px;
+        content: "";
+        display: block;
+        background-color: $title-color;
+      }
+
+      p {
+        padding: 4px;
+      }
+    }
+  }
+}
+
+@keyframes rainbowAnimation {
+  0% {
+    background-color: #FFEED9;
+    color: #FF9900;
+  }
+  16% {
+    background-color: #fff6d9;
+    color: #ffe600;
+  }
+  32% {
+    background-color: #e0ffd9;
+    color: #59ff00;
+  }
+  48% {
+    background-color: #d9fcff;
+    color: #00d9ff;
+  }
+  64% {
+    background-color: #e4d9ff;
+    color: #6a00ff;
+  }
+  72% {
+    background-color: #fcd9ff;
+    color: #ff00f2;
+  }
+  88% {
+    background-color: #ffd9d9;
+    color: #ff0000;
+  }
+  100% {
+    background-color: #FFEED9;
+    color: #FF9900;
+  }
+}

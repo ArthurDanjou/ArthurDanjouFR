@@ -1,0 +1,23 @@
+{
+  "name": "arthurdanjou.fr",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "axios": "^0.19.2",
+    "baffle": "^0.3.6",
+    "moment": "^2.25.3",
+    "moment-timezone": "^0.5.28",
+    "next": "9.3.5",
+    "next-images": "^1.4.0",
+    "node-sass": "^4.14.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-moment": "^0.9.7"
+  }
+}

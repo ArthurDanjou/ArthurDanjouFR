@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  scroll-behavior: smooth;
+
+  &, :after, &:before {
+    box-sizing: border-box;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:visited {
+    text-decoration: none;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}
