@@ -97,7 +97,7 @@ const About = () => {
                 </a>
             </Link>
             */}
-            <a className="about-container button" href="/assets/CV.pdf" target="_blank">Mon CV</a>
+            <a className="about-container button" href="/assets/CV.pdf" target="_blank">Mon Résumé</a>
         </div>
     )
 };
