@@ -10,6 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
+      - name: Delete old Dir & create a new one
+        run: rmdir /home/arthur/website && mkdir /home/arthur/website
+
       - name: Deploy
         run: cp -r . /home/arthur/website
 
