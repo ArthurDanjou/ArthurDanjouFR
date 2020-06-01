@@ -12,12 +12,12 @@ jobs:
 
       - name: Deploy
         uses: garygrossgarten/github-action-ssh@release
-          with:
-            command: cp . /home/arthur/website
-            host: ${{ secrets.HOST }}
-            username: ${{ secrets.USERNAME }}
-            passphrase: ${{ secrets.PASSPHRASE }}
-            privateKey: ${{ secrets.KEY}}
+        with:
+          command: cp . /home/arthur/website
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          passphrase: ${{ secrets.PASSPHRASE }}
+          privateKey: ${{ secrets.KEY}}
 
       - name: Build
         run: yarn run build-all
