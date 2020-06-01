@@ -1,0 +1,93 @@
+#passions-home {
+  width: 100%;
+  background-color: $white;
+  color: $black-2;
+  padding: $padding-content;
+
+  @media screen and (max-width: 700px) {
+    padding: $padding-content-mobile;
+  }
+
+  .tag {
+    color: $cyan-color;
+    background-color: $cyan-bg;
+  }
+
+  .passions-container {
+    padding: $padding-container;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    @media screen and (max-width: 700px) {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .passions-top {
+      margin-bottom: 30px;
+
+      @media screen and (max-width: 700px) {
+        margin-bottom: 0;
+      }
+    }
+
+    .passions-top, .passions-bottom {
+      display: flex;
+
+      @media screen and (max-width: 700px) {
+        padding: 10px;
+        flex-direction: column;
+      }
+    }
+
+    .passion {
+      width: 65%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 5%;
+      letter-spacing: 1px;
+
+      @media screen and (max-width: 700px) {
+        width: 100%;
+        padding: 20px;
+      }
+
+      .color {
+        color: #d9fcff;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: $web-h1;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 700px) {
+          font-size: $mobile-h1;
+        }
+
+        &:after {
+          margin: 7px auto;
+          width: 40px;
+          height: 2px;
+          display: block;
+          content: "";
+          background-color: $cyan-color;
+        }
+      }
+      p {
+        font-size: $web-p;
+        text-align: justify;
+
+        @media screen and (max-width: 700px) {
+          font-size: $mobile-p;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,99 @@
+#process-home {
+  width: 100%;
+  background-color: $black-1;
+  color: $grey;
+  padding: $padding-content;
+
+  @media screen and (max-width: 700px) {
+    padding: $padding-content-mobile;
+  }
+
+  .tag {
+    color: $pink-color;
+    background-color: $pink-bg;
+  }
+
+  .process-container {
+    padding: $padding-container;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 700px) {
+      padding: 10px;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .process-left, .process-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .process-left {
+      border-right: 1px solid $white;
+
+      @media screen and (max-width: 700px) {
+        border: 0;
+      }
+    }
+
+    .process-right {
+      border-left: 1px solid $white;
+
+      @media screen and (max-width: 700px) {
+        border: 0;
+      }
+    }
+
+    .processus {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+
+      @media screen and (max-width: 700px) {
+        width: 95%;
+      }
+
+      .color {
+        color: $pink-bg;
+      }
+
+      h1 {
+        color: $white;
+        font-size: $web-h1;
+        align-self: center;
+
+        @media screen and (max-width: 700px) {
+          font-size: $mobile-h1;
+        }
+
+        &:after {
+          margin: 7px auto;
+          width: 40px;
+          height: 2px;
+          display: block;
+          content: "";
+          background-color: $pink-color;
+        }
+      }
+
+      p {
+        text-align: center;
+        align-self: center;
+        font-size: $web-p;
+
+        @media screen and (max-width: 700px) {
+          font-size: $mobile-p;
+        }
+      }
+    }
+
+  }
+}

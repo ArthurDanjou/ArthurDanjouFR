@@ -1,0 +1,104 @@
+$name: 5rem;
+$title: 1.6rem;
+$orange: #ffcda1;
+
+#resume {
+  margin: 5%;
+  display: grid;
+  grid-template-areas:
+    "sb content";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 4fr;
+  padding: 5% 2%;
+  background-color: rgb(222, 255, 254);
+
+  .sidebar {
+    grid-area: sb;
+    width: 100%;
+
+    h1 {
+      font-size: $web-h3;
+    }
+
+    .links, .tech, .others, .languages {
+      margin-bottom: 15px;
+    }
+
+    .links {
+
+      li {
+        line-height: 1.5;
+      }
+
+      a {
+        box-shadow: inset 0 -5px 0 $orange;
+
+        &:hover {
+          box-shadow: inset 0 -100px 0 $orange;
+        }
+      }
+
+      ul {
+        list-style: none;
+      }
+    }
+
+    ul {
+      list-style: square inside;
+      margin-left: 15px;
+
+      li {
+        font-size: $web-p;
+        color: $black-2;
+      }
+    }
+  }
+
+  .container {
+    grid-area: content;
+    width: 100%;
+
+    .header {
+
+      &:after {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: $black-1;
+      }
+
+      h1 {
+        color: $cyan-color;
+        font-size: $name;
+        line-height: 1;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-size: $title;
+        line-height: 1;
+        margin-bottom: 40px;
+      }
+
+      p {
+        color: $black-2;
+        width: 75%;
+        font-size: 1.2rem;
+        line-height: 1;
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+    }
+
+    .content {
+      .content-section {
+        padding: 20px 0;
+        h3 {
+          padding: 15px 0;
+          color: $cyan-color;
+          font-size: $title;
+        }
+      }
+    }
+  }
+}

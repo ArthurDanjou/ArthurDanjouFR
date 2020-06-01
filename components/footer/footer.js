@@ -1,5 +1,4 @@
 import React from 'react';
-import "./footer.scss";
 
 const Footer = () => {
     return (
@@ -11,8 +10,8 @@ const Footer = () => {
                     <br />
                     à <span><a href="mailto:arthurdanjou@outlook.fr">contact@arthurdanjou.fr</a></span> pour que l'on en discute ensemble !
                 </h3>
-            </div>
-            <div className="footer-bottom">
+                <div className="spacer">ou</div>
+                <h2>Retrouvez moi sur</h2>
                 <div className="social-list">
                     <a href="https://github.com/ArthurDanjou" target="_blank">
                         <img src="/assets/github.svg" height={50} alt="GitHub Icon" />
@@ -20,10 +19,14 @@ const Footer = () => {
                     <a href="https://twitter.com/ArthurDanj" target="_blank">
                         <img src="/assets/twitter.svg" height={50} alt="Twitter Icon" />
                     </a>
-                    <a href="mailto:arthurdanjou@outlook.fr" target="_blank">
-                        <img src="/assets/email.svg" height={50} alt="Mail Icon" />
-                    </a>
                 </div>
+            </div>
+            <div className="footer-bottom">
+                <p>
+                    Développé et conçu avec <span>❤</span> par Arthur Danjou
+                    <br/>
+                    © Copyright 2020 - Tous droits réservés
+                </p>
             </div>
         </footer>
     )

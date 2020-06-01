@@ -1,0 +1,129 @@
+$title-color: #37383F;
+
+#banner-home {
+  height: 100vh;
+  background: url("/assets/background.png") no-repeat center;
+  background-size: cover;
+
+  .banner-container {
+    height: 100%;
+    color: $title-color;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .name {
+      font-size: 100px;
+      font-weight: 900;
+
+      @media screen and (max-width: 700px) {
+        font-size: 70px;
+      }
+
+      @media screen and (max-width: 500px) {
+        font-size: 40px;
+      }
+
+      #rainbow {
+        border-radius: 5px;
+        font-weight: bold;
+        padding: 3px 5px;
+        background-color: $orange-bg;
+        color: $orange-color;
+        animation: rainbowAnimation 20s infinite;
+      }
+    }
+
+    .role {
+      font-size: $web-h2;
+      margin-top: 20px;
+
+      @media screen and (max-width: 700px) {
+        font-size: $mobile-h3;
+        text-align: center;
+        width: 60%;
+
+        span:after {
+          content: "\A";
+          display: block;
+        }
+      }
+
+      #spacer {
+        text-transform: lowercase;
+      }
+    }
+
+    .scroller {
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+
+      .scroller-animation {
+        height: 80px;
+        position: inherit;
+        width: 1px;
+        content: "";
+        display: block;
+        background-color: $black-1;
+        bottom: 0;
+        animation: scrollAnimation 1.5s infinite ease;
+      }
+
+      p {
+        padding: 10px;
+        transform: translateY(-50px);
+      }
+    }
+  }
+}
+
+@keyframes scrollAnimation {
+  from {
+    height: 80px;
+  }
+  to {
+    height: 0px;
+  }
+}
+
+@keyframes rainbowAnimation {
+  0% {
+    background-color: $orange-bg;
+    color: $orange-color;
+  }
+  16% {
+    background-color: $yellow-bg;
+    color: $yellow-color;
+  }
+  32% {
+    background-color: $green-bg;
+    color: $green-color;
+  }
+  48% {
+    background-color: $cyan-bg;
+    color: $cyan-color;
+  }
+  64% {
+    background-color: $purple-bg;
+    color: $purple-color;
+  }
+  72% {
+    background-color: $pink-bg;
+    color: $pink-color;
+  }
+  88% {
+    background-color: $red-bg;
+    color: $red-color;
+  }
+  100% {
+    background-color: $orange-bg;
+    color: $orange-color;
+  }
+}

@@ -1,68 +1,52 @@
 import React, {useState} from 'react';
+import ActiveLink from "./activelink";
 import Link from "next/link";
-import "./header.scss";
-import ActiveLink from "./activelink/activelink";
 
 const Header = () => {
 
     const [isOpened, setOpened] = useState(false);
-    const [isActive, setActive] = useState(false);
 
     return (
         <header id="header">
-            <div className={isActive ? "active logo" : "logo"} >
-                LOGO
+            <div className={isOpened ? "opened logo" : "logo"}>
+                <Link href="/">
+                    <a>
+                        Arthur<span id="arrow"/> <br/>Danjou
+                    </a>
+                </Link>
             </div>
+
             <div className={isOpened ? "opened cross" : "cross"} onClick={() => setOpened(!isOpened)}/>
 
             <div className={isOpened ? "opened menu" : "menu"} >
-                <div className="menu-top">
-                    <div className="pages-link">
-                        <div className="title">
-                            Mes Pages
-                        </div>
-                        <ul>
-                            <li>
-                                <ActiveLink href="/" activeClassName="active">
-                                    <a>Accueil</a>
-                                </ActiveLink>
-                            </li>
-                            <li>
-                                <ActiveLink href="/blog" activeClassName="active">
-                                    <a>Mon blog</a>
-                                </ActiveLink>
-                            </li>
-                            <li>
-                                <ActiveLink href="/about" activeClassName="active">
-                                    <a>A propos</a>
-                                </ActiveLink>
-                            </li>
-                            <li>
-                                <ActiveLink href="/env" activeClassName="active">
-                                    <a>Mon environnement</a>
-                                </ActiveLink>
-                            </li>
-                        </ul>
+                <div className="pages-link">
+                    <div className="title">
+                        Mes Pages
                     </div>
-                    <div className="contact-link">
-                        <div className="title">
-                            Les autres
-                        </div>
-                        <ul>
-                            <li>
-                                <Link href="/resume">
-                                    <a>Résumé</a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/cli">
-                                    <a>Console</a>
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul>
+                        <li>
+                            <ActiveLink href="/" activeClassName="active">
+                                <a>Accueil</a>
+                            </ActiveLink>
+                        </li>
+                        <li>
+                            <ActiveLink href="/about" activeClassName="active">
+                                <a>A propos</a>
+                            </ActiveLink>
+                        </li>
+                        <li>
+                            <ActiveLink href="/env" activeClassName="active">
+                                <a>Mon environnement</a>
+                            </ActiveLink>
+                        </li>
+                        <li>
+                            <ActiveLink href="/resume" activeClassName="active">
+                                <a>Résumé</a>
+                            </ActiveLink>
+                        </li>
+                    </ul>
                 </div>
-                <div className="menu-bottom">
+                <div className="contact-links">
                     <ul>
                         <li>
                             <a href="mailto:arthurdanjou@outlook.fr" target='_blank'>Mail</a>

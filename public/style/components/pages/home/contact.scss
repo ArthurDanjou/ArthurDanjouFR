@@ -1,0 +1,138 @@
+#contact {
+  width: 100%;
+  background-color: $white;
+  color: $black-2;
+  padding: $padding-content;
+
+  @media screen and (max-width: 700px) {
+    padding: $padding-content-mobile;
+  }
+
+  .tag {
+    color: $orange-color;
+    background-color: $orange-bg;
+  }
+
+  .contact-container {
+    padding: $padding-container;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      text-align: center;
+      h1 {
+        margin-bottom: 10px;
+        font-size: $web-h1;
+
+        @media screen and (max-width: 700px) {
+          font-size: $mobile-h1;
+        }
+      }
+
+      p {
+        font-size: $web-p;
+        font-style: italic;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 700px) {
+          font-size: $mobile-p;
+        }
+      }
+    }
+
+    form {
+      width: 50%;
+      background: transparent;
+      box-shadow: none;
+
+      @media screen and (max-width: 700px) {
+        width: 90%;
+      }
+
+      label {
+        color: #ffb460;
+        font-size: .9rem;
+        padding: 5px 0;
+      }
+
+      .form-top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        @media screen and (max-width: 700px) {
+          flex-direction: column;
+        }
+
+        input {
+          border: 0;
+          border-bottom: 1px solid $orange-color;
+          font-size: $web-h5;
+        }
+
+        .left {
+          display: flex;
+          flex-direction: column;
+          width: 40%;
+          float: left;
+
+          @media screen and (max-width: 700px) {
+            width: 100%;
+            margin-bottom: 5px;
+          }
+        }
+
+        .right {
+          display: flex;
+          flex-direction: column;
+          width: 40%;
+          float: right;
+
+          @media screen and (max-width: 700px) {
+            width: 100%;
+          }
+        }
+      }
+
+      .form-bottom {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+
+        textarea {
+          font-size: $web-h5;
+          resize: none;
+          border: 0;
+          border-bottom: 1px solid $orange-color;
+          color: $orange-color;
+
+          @media screen and (max-width: 700px) {
+            height: 9em;
+          }
+        }
+      }
+
+      .form-submit {
+        display: flex;
+        justify-content: center;
+        .button {
+          padding: 20px 15px;
+          background-color: $white;
+          color: #FF9900;
+          border: 1px solid $orange-color;
+          transition: .2s;
+
+          &:hover {
+            background-color: $orange-color;
+            color: $white;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+}

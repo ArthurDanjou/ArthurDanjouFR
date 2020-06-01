@@ -5,19 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "sass": "sass ./public/style/style.scss:./dist/app.scss"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
-    "axios": "^0.19.2",
-    "baffle": "^0.3.6",
-    "moment": "^2.25.3",
-    "moment-timezone": "^0.5.28",
     "next": "9.3.5",
     "next-images": "^1.4.0",
     "node-sass": "^4.14.0",
-    "react": "16.13.1",
+    "react": "^16.13.1",
     "react-dom": "16.13.1",
-    "react-moment": "^0.9.7"
+    "sass": "^1.26.5"
   }
 }

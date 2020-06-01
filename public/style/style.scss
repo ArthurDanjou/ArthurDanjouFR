@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import "./constant";
+
+@import "components/pages/home/tag";
+
+@import "components/header";
+@import "components/footer";
+@import "components/template";
+
+@import "components/pages/skills";
+@import 'components/pages/about';
+@import 'components/pages/env';
+@import 'components/pages/resume';
+
+@import "components/pages/home/about";
+@import "components/pages/home/process";
+@import "components/pages/home/contact";
+@import "components/pages/home/banner";
+@import "components/pages/home/passions";
 
 * {
   font-family: "Raleway", sans-serif;
@@ -10,22 +28,6 @@
   &, :after, &:before {
     box-sizing: border-box;
   }
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: white;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
 
 a {
