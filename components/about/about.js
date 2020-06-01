@@ -103,11 +103,3 @@ const About = () => {
 };
 
 export default About;
-
-//TODO CV
-/*
-Présentation
-Compétences
-Parcours (Education)
-
- */
