@@ -16,7 +16,7 @@ jobs:
           path: /home/arthur/website
 
       - name: Install
-        run: yarn install
+        run: yarn
 
       - name: Build
         run: yarn build-all
