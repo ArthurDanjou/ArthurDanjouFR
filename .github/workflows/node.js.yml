@@ -21,7 +21,7 @@ jobs:
           TARGET: "/home/arthur/website"
 
       - name: Build
-        run: yarn build-all
+        run: yarn run build-all
 
       - name: Run
-        run: yarn start
+        run: yarn run start
