@@ -1,1 +1,1 @@
-screen -S nextjs -d -m yarn start
+yarn start
