@@ -16,6 +16,7 @@ const Header = () => {
                 </Link>
             </div>
 
+
             <div className={isOpened ? "opened cross" : "cross"} onClick={() => setOpened(!isOpened)}/>
 
             <div className={isOpened ? "opened menu" : "menu"} >
