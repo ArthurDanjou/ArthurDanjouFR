@@ -10,6 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
+      - name: Create Dir
+        run: mkdir /home/arthur/website
+
       - name: Deploy
         run: cp -r . /home/arthur/website
 
