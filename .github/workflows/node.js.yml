@@ -20,9 +20,6 @@ jobs:
           REMOTE_USER: ${{ secrets.SSH_USERNAME }}
           TARGET: "/home/arthur/website"
 
-      - name: Install
-        run: yarn install
-
       - name: Build
         run: yarn build-all
 
