@@ -1,5 +1,6 @@
 $name: 5rem;
 $title: 1.6rem;
+$subtitle: 1.3rem;
 $orange: #ffcda1;
 
 #resume {
@@ -97,6 +98,36 @@ $orange: #ffcda1;
           padding: 15px 0;
           color: $cyan-color;
           font-size: $title;
+        }
+
+        ul {
+          list-style: none;
+
+          li {
+            padding: 20px 0;
+            h4 {
+              font-size: $subtitle;
+            }
+
+            p {
+
+            }
+          }
+        }
+      }
+
+      .hobbies ul {
+        display: flex;
+
+        li {
+          display: flex;
+          flex-direction: column;
+          padding: 15px;
+
+          img {
+            height: 50px;
+            width: auto;
+          }
         }
       }
     }

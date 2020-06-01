@@ -90,11 +90,14 @@ const About = () => {
                     </li>
                 </ul>
             </div>
+            {/*TODO change to new CV
             <Link href="/resume">
                 <a className="about-container button">
                     Mon CV
                 </a>
             </Link>
+            */}
+            <a className="about-container button" href="/assets/CV.pdf" target="_blank">Mon CV</a>
         </div>
     )
 };

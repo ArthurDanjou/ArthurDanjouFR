@@ -109,6 +109,8 @@ const Resume = () => {
                                 <p>
                                     Développement et réalisation de projets Back-End et Front-End réalisés par l’équipe GamePlay
                                     – Maintien et mise à jour des projets en production.
+                                    <br/><br/>
+                                    <strong>Technologies : </strong> Java, MariaDB, Git, TeamWorking
                                 </p>
                             </li>
                             <li>
@@ -124,17 +126,41 @@ const Resume = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="content-section">
+                    <div className="content-section hobbies">
                         <h3>Activités & Centres d'intérets</h3>
                         <ul>
-                            <li>Informatique</li>
-                            <li>Développement🧑</li>
-                            <li>Cuisine</li>
-                            <li>Rugby</li>
-                            <li>Musculation</li>
-                            <li>Moto</li>
-                            <li>Sécurité</li>
-                            <li>Serveurs</li>
+                            <li>
+                                <img src="/assets/resume/compscience.png" alt="Informatique" height={50}/>
+                                Informatique
+                            </li>
+                            <li>
+                                <img src="/assets/resume/dev.png" alt="Developpement" height={50}/>
+                                Développement
+                            </li>
+                            <li>
+                                <img src="/assets/resume/cooking.png" alt="Cuisine" height={50}/>
+                                Cuisine
+                            </li>
+                            <li>
+                                <img src="/assets/resume/rugby.png" alt="Rugby" height={50}/>
+                                Rugby
+                            </li>
+                            <li>
+                                <img src="/assets/resume/fitness.png" alt="Musculation" height={50}/>
+                                Musculation
+                            </li>
+                            <li>
+                                <img src="/assets/resume/motorbike.png" alt="Moto" height={50}/>
+                                Moto
+                            </li>
+                            <li>
+                                <img src="/assets/resume/security.png" alt="Sécurité" height={50}/>
+                                Sécurité
+                            </li>
+                            <li>
+                                <img src="/assets/resume/server.png" alt="Serveurs" height={50}/>
+                                Serveurs
+                            </li>
                         </ul>
                     </div>
                 </div>

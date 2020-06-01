@@ -14,10 +14,10 @@ const Footer = () => {
                 <h2>Retrouvez moi sur</h2>
                 <div className="social-list">
                     <a href="https://github.com/ArthurDanjou" target="_blank">
-                        <img src="/assets/github.svg" height={50} alt="GitHub Icon" />
+                        <img src="/assets/social/github.svg" height={50} alt="GitHub Icon" />
                     </a>
                     <a href="https://twitter.com/ArthurDanj" target="_blank">
-                        <img src="/assets/twitter.svg" height={50} alt="Twitter Icon" />
+                        <img src="/assets/social/twitter.svg" height={50} alt="Twitter Icon" />
                     </a>
                 </div>
             </div>
