@@ -12,9 +12,9 @@ jobs:
 
       - name: Deploy
         uses: actions/upload-artifact@v2
-          with:
-            name: ArthurDanjouFR
-            path: /home/arthur/website
+        with:
+          name: ArthurDanjouFR
+          path: /home/arthur/website
 
       - name: Install
         uses: appleboy/ssh-action@master
