@@ -13,7 +13,7 @@ jobs:
       - name: Deploy
         uses: garygrossgarten/github-action-ssh@release
           with:
-            command: ls -a
+            command: cp . /home/arthur/website
             host: ${{ secrets.HOST }}
             username: ${{ secrets.USERNAME }}
             passphrase: ${{ secrets.PASSPHRASE }}
