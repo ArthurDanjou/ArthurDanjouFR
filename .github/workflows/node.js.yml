@@ -23,4 +23,4 @@ jobs:
         run: yarn build-all
 
       - name: Run
-        run: yarn start
+        run: ./run.sh
