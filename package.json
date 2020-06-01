@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "sass": "sass ./public/style/style.scss:./dist/app.scss"
+    "sass": "sass ./public/style/style.scss:./dist/app.scss",
+    "build-all": "yarn build && yarn sass",
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
