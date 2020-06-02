@@ -23,4 +23,4 @@ jobs:
         run: yarn build-all
 
       - name: Run
-        run: pm2 start yarn --name "next" -- start
+        run: pm2 start yarn --name "next" --watch -- start
