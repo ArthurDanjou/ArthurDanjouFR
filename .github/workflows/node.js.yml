@@ -1,6 +1,9 @@
 name: Deploy, Install, Build & Run
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   deploy:
