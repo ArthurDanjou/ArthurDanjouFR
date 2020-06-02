@@ -19,7 +19,7 @@ const About = () => {
                 <h1>Mon parcours 🧮</h1>
                 <p>
                     Comme dit précédemment, en 2015 j'ai commencé à développer en Java pour créer des plugins sur MineCraft.
-                    J'ai rejoins différents projets qui m'ont appris différentes technologies et m'ont aidés à améliorer mon niveau en Java.
+                    J'ai rejoins différents projets qui m'ont appris différentes technologies et m'ont aidé à améliorer mon niveau en Java.
                     Puis j'ai voulu m'expertiser dans le Web, oui ce vaste domaine. J'ai donc appris de nouveaux langages. Avec ces mêmes langages,
                     on peut développer des applications mobiles et bureautiques. En parallèle, j'ai passé mon permis moto, le permis A1. Depuis ce moment, une nouvelle passion s'est créee en moi.
                     Avec mes cours, j'ai pu passer la formation PSC1 (Prévention et secours civiques de niveau 1).
@@ -32,7 +32,7 @@ const About = () => {
                     Je suis actuellement en classe de première générale. Je fais partie de la génération du nouveau baccalauréat.
                     Mes spécialités sont Mathémétiques, Physique-Chimie et Sciences économiques et sociales.
                     Pour la classe de Terminale, je garde les deux premières spécialités listées précédemment.
-                    J'envisage de faire une classe préparatoire MP2I (Maths / Physique / Informatique / Ingénieurie).
+                    J'envisage de faire une classe préparatoire MP2I (Mathématiques / Physique / Informatique / Ingénieurie).
                     C'est une nouvelle classe préparatoire. Enfin, j'aimerais rejoindre une école d'ingénieur spécialisée en informatique, ou dans un autre domaine.
                 </p>
             </div>

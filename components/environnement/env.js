@@ -26,7 +26,7 @@ const Env = () => {
             </div>
             <div className="env-container">
                 <h1>Mes éditeurs de texte 🧰</h1>
-                <p>Je dispose de la license étudiante Jetbrains pour avori accès gratuitement</p>
+                <p>Je dispose de la licence étudiante Jetbrains pour y avoir accès gratuitement</p>
                 <ul>
                     <li>
                         <a href="https://www.jetbrains.com/idea/" target="_blank">Intellij Idea Ultimate</a> pour développer en Java.
