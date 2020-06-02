@@ -23,4 +23,4 @@ jobs:
         run: yarn build-all
 
       - name: Run
-        run: chmod 777 ./run.sh && screen -S nextjs -d -m sh run.sh
+        run: pm2 start yarn --name "next" -- start
