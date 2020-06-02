@@ -3,8 +3,17 @@ name: Deploy, Install, Build & Run
 on: [push]
 
 jobs:
-  build:
+  deploy:
+    runs-on: self-hosted
 
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Delete old Dir & create a new one
+        run: rm -rf /home/arthur/website && mkdir /home/arthur/website
+
+  build:
+    needs: deploy
     runs-on: self-hosted
 
     steps:
@@ -21,6 +30,14 @@ jobs:
 
       - name: Build
         run: yarn build-all
+
+  run:
+    needs: build
+    runs-on: self-hosted
+
+    steps:
+      - name: Close old daemon
+        run: pm2 delete next
 
       - name: Run
         run: pm2 start yarn --name "next" -- start
