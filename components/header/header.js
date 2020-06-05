@@ -63,7 +63,7 @@ const Header = () => {
                 <div className="contact-links">
                     <ul>
                         <li>
-                            <a href="mailto:arthurdanjou@outlook.fr" target='_blank'>Mail</a>
+                            <a href="mailto:contact@arthurdanjou.fr" target='_blank'>Mail</a>
                         </li>
                         <li>
                             <a href="https://github.com/ArthurDanjou" target="_blank">Github</a>
