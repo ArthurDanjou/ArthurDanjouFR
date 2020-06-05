@@ -4,7 +4,7 @@ import Head from "next/head";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import Template from "../components/template/template";
-import Work from "../components/work/work";
+import Services from "../components/services/services";
 
 const WorkPage = () => {
     return (
@@ -14,11 +14,11 @@ const WorkPage = () => {
             </Head>
             <Header />
             <Template
-                question="Mes projets"
-                title="Mon Travail"
-                description="Ayez un aperçu de mon travail ainsi que de mes compétences à travers mes différents projets professionnels et personnels."
+                question="Ce que je propose"
+                title="Mes Services"
+                description="Choisissez l'offre qui vous correspond et qui répond le plus à vos critères et à vos attentes !"
             >
-                <Work />
+                <Services />
             </Template>
             <Footer />
         </div>
