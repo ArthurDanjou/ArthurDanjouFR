@@ -17,7 +17,7 @@ const WorkPage = () => {
                 title="Mon Travail"
                 description="Ayez un aperçu de mon travail et de mes projets professionnels et personnels."
             >
-                Showcase
+                Mon travail
             </Template>
             <Footer />
         </div>
