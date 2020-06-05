@@ -8,7 +8,7 @@ const Footer = () => {
                 <h3>
                     Envoyez moi votre projet en détaillant votre délais, votre budget et vos attentes
                     <br />
-                    à <span><a href="mailto:arthurdanjou@outlook.fr">contact@arthurdanjou.fr</a></span> pour que l'on en discute ensemble !
+                    à <span><a href="mailto:contact@arthurdanjou.fr">contact@arthurdanjou.fr</a></span> pour que l'on en discute ensemble !
                 </h3>
                 <div className="spacer">ou</div>
                 <h2>Retrouvez moi sur</h2>
