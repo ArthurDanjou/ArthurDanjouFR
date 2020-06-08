@@ -39,8 +39,5 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: Close old daemon
-        run: pm2 delete next
-
       - name: Run
-        run: pm2 start yarn --name "next" -- start
+        run: pm2 startOrReload yarn --name "next" -- start
