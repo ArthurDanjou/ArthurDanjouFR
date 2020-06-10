@@ -10,7 +10,7 @@ const AboutPage = () => {
     return (
         <div className="about">
             <Head>
-                <link rel="shortcut icon" href="/assets/photo-round.png" />
+                <link rel="shortcut icon" href="/favicon/favicon.ico" />
                 <title>Arthur Danjou | A propos</title>
             </Head>
             <Header />
