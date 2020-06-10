@@ -39,7 +39,7 @@ const Header = () => {
                                 <a>Mon environnement</a>
                             </ActiveLink>
                         </li>
-                        {/*<li>
+                        <li>
                             <ActiveLink href="/services" activeClassName="active">
                                 <a>Mes services</a>
                             </ActiveLink>
@@ -53,10 +53,6 @@ const Header = () => {
                             <ActiveLink href="/resume" activeClassName="active">
                                 <a>Résumé</a>
                             </ActiveLink>
-                        </li>
-                        TODO uncomment*/}
-                        <li>
-                            <a className="about-container button" href="/assets/CV.pdf" target="_blank">Résumé</a>
                         </li>
                     </ul>
                 </div>
