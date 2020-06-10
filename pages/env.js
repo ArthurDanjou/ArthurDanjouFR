@@ -10,6 +10,7 @@ const EnvPage = () => {
     return (
         <div className="env">
             <Head>
+                <link rel="shortcut icon" href="/assets/photo-round.png" />
                 <title>Arthur Danjou | Environnement</title>
             </Head>
             <Header />

@@ -13,6 +13,7 @@ const HomePage = () => {
   return (
       <div className="home">
           <Head>
+              <link rel="shortcut icon" href="/assets/photo-round.png" />
               <title>Arthur Danjou | Accueil</title>
           </Head>
           <Header />
